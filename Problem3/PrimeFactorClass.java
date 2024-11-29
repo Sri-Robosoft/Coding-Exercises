@@ -17,7 +17,7 @@ public class PrimeFactorClass {
         for(int i=2; i<=n; i++) {
             while(n%i==0) {
                 this.primeList.add(i);
-                n=n/2;
+                n=n/i;
             }
         }
         return this.primeList;
