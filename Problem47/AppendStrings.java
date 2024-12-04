@@ -1,3 +1,5 @@
+package Problem47;
+
 public class AppendStrings {
 
     public static String appendTwoStrings(String str1, String str2) {
@@ -14,6 +16,6 @@ public class AppendStrings {
     public static void main(String[] args) {
         String str1 = "Hey";
         String str2 = "yHey";
-        System.out.println("Final string fter appending strings " +str1+ " and " +str2+ " is: " +appendTwoStrings(str1, str2));
+        System.out.println("Final string after appending strings " +str1+ " and " +str2+ " is: " +appendTwoStrings(str1, str2));
     }
 }

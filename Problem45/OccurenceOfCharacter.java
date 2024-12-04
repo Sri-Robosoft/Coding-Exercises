@@ -1,8 +1,11 @@
+package Problem45;
+
 import java.util.*;
 
 public class OccurenceOfCharacter {
 
     public static void findOccurenceOfCharacter(String str, Map<Character,Integer> occurMap, int i) {
+
         if(i==str.length())
             return;
     
@@ -13,10 +16,11 @@ public class OccurenceOfCharacter {
     public static void main(String[] args) {
         Map<Character, Integer> occurenceMap = new HashMap<>();
         String str = "Helloo";
-        char charOccurence = 'o';
+        char charOccurence = 'e';
 
         findOccurenceOfCharacter(str, occurenceMap, 0);
         System.out.println("Occurence of character " +charOccurence+ " in string " +str+ " is: " +occurenceMap.get(charOccurence));
+
     }
 }
 

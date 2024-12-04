@@ -1,15 +1,17 @@
+package Problem38;
+
 public class InsertStringInBetweenString {
 
     public static String insertString(String str1, String str2, int index) { 
-        String str3 = "";
+        StringBuilder str3 = new StringBuilder();
   
         for (int i = 0; i < str1.length(); i++) { 
             if (i == index) { 
-                str3 += str2; 
+                str3.append(str2);
             } 
-            str3 += str1.charAt(i); 
+            str3.append(str1.charAt(i));
         }
-         return str3;
+         return str3.toString();
 
 		// String str3 = str1.substring(0, index) + str2 + str1.substring(index); 
 		// return str3;

@@ -1,3 +1,5 @@
+package Problem46;
+
 import java.io.*;
 
 public class InsertStringToFile {

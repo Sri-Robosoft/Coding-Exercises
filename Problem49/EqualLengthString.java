@@ -1,3 +1,5 @@
+package Problem49;
+
 public class EqualLengthString {
 
     public static String makeStringEqualLength(String str1, String str2) {

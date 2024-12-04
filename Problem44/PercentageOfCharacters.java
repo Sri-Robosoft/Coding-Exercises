@@ -1,3 +1,5 @@
+package Problem44;
+
 public class PercentageOfCharacters {
 
     public static void findPercentageOfCharactersInString(String str) {

@@ -1,8 +1,13 @@
+package Problem41;
+
 public class CountUpperLowerCaseLetters {
 
     public static void countUpperLowerCaseLettersInString(String str) {
         int lowerCount = 0;
         int upperCount = 0;
+
+        if(str.isEmpty())
+            return;
 
         for(int i=0; i<str.length(); i++) {
             int asciiCode = (int) str.charAt(i);

@@ -1,3 +1,5 @@
+package Problem42;
+
 public class StringsAreRotations {
 
     public static boolean checkStringsAreRotations(String str1, String str2) {
@@ -7,7 +9,6 @@ public class StringsAreRotations {
         for(int i=0; i<str1.length(); i++) {
             if(str1.equalsIgnoreCase(str2))
                 return true;
-            
             str2 = str2.charAt(str2.length()-1) + str2.substring(0,str2.length()-1);
         }
         return false;

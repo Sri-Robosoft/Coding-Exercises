@@ -1,8 +1,15 @@
+package Problem48;
+
 import java.io.*;
 
 public class CountOfCharactersWordsLines {
 
     public static void findCountOfCharactersWordsLineInFile(String url) throws IOException {
+        String line; 
+        int wordCount = 0; 
+        int characterCount = 0; 
+        int lineCount = 0;
+
         File file1 = new File(url);
         BufferedWriter writer = new BufferedWriter(new FileWriter(file1));
 
@@ -13,12 +20,7 @@ public class CountOfCharactersWordsLines {
         writer.write("Morning Helios");
         writer.close();
 
-        BufferedReader reader = new BufferedReader(new FileReader(file1));
-
-        String line; 
-        int wordCount = 0; 
-        int characterCount = 0; 
-        int lineCount = 0; 
+        BufferedReader reader = new BufferedReader(new FileReader(file1)); 
 
          while ((line = reader.readLine()) != null) { 
             lineCount++;
@@ -37,7 +39,7 @@ public class CountOfCharactersWordsLines {
         try {
             findCountOfCharactersWordsLineInFile("javaFile.txt");
         } catch (IOException e) {
-            e.printStackTrace();
+            e.toString();
         }
     }
 }
