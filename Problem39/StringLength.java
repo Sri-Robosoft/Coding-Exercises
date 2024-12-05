@@ -3,15 +3,23 @@ package Problem39;
 public class StringLength {
 
     public static int findLengthOfString(String str, int length) {
-        if(str.isEmpty())
-            return length;
+        int i = 0;
+        char characterInString;
 
-        return findLengthOfString(str.substring(1), length+1);
+        while (i >= 0) {
+            try {
+                characterInString = str.charAt(i);
+                length++;
+                i++;
+            } catch (Exception e) {
+                break;
+            }
+        }
+        return length;
     }
     public static void main(String[] args) {
         String str = "Hello ";
         int initialLength = 0;
-        int length = findLengthOfString(str, initialLength);
-        System.out.println("Length of string " +str+ " is: " +length);
+        System.out.println("Length of string " +str+ " is: " +findLengthOfString(str, initialLength));
     }
 }
