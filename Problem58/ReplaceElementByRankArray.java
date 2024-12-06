@@ -1,4 +1,4 @@
-package problem58;
+package Problem58;
 
 import java.util.*;
 
