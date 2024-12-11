@@ -67,10 +67,6 @@ public class StackUsingArray {
             printStack(top, arr);
             top = popFromArray(top, arr);
             printStack(top, arr);
-
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
