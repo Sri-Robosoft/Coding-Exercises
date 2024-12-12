@@ -1,3 +1,5 @@
+package Problem81;
+
 public class SumOfDiagonalElements {
 
     public static int findSumOfDiagonalElementsInMatrix(int[][] elementArray) {
