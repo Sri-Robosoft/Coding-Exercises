@@ -29,7 +29,7 @@ class MissingNumberArithmeticSeries {
         return -1;
     }
     public static void main(String[] args) {
-        int[] arr = {19, 15, 3, 23, 7};
+        int[] arr = {19, 15, 3, 23, 7, 11};
         // int[] arr = { };
 
         System.out.println("Arithmetic Series is: ");
