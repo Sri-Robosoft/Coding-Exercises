@@ -29,17 +29,20 @@ public class MaximumProductThreeNumbers {
             }
         }
 
+        System.out.println("Maximum product is: " +maxProduct);
+
         return numbersList;
     }
     public static void main(String[] args) {
       int[] arr = {-15, -22, 3, 8, 4};
-    
+
         System.out.println("Array Elements: ");
         System.out.println(Arrays.toString(arr));
 
         try {
+            List<Integer> maxThreeNumbers = findMaximumProductThreeNumbers(arr);
             System.out.println("Three Numbers with maximum product is: ");
-            for(Integer numbers : findMaximumProductThreeNumbers(arr)) {
+            for(Integer numbers : maxThreeNumbers) {
                 System.out.print(numbers + " ");
             }
         } catch (Exception e) {
